@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The Storage Event 2</h1>
+
+<p>The Storage event is triggered when there is a change in the window's storage area.</p>
+
+<p><strong>Note:</strong> The storage event is only triggered when a window 
+<strong>other than itself</strong> makes the changes.</p>
+
+<p>Therefore, in this example, a new window is created, and the changes is done in the new window.</p>
+
+<button onclick="changeValue()">Change a Storage Item</button>
+
+<p id="demo"></p>
+
+<script>
+
+function changeValue() {
+  localStorage.setItem("mytime", Date.now());
+}
+</script>
+</body>
+</html>
