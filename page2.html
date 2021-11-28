@@ -1,5 +1,13 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <script>
+changeValue();
+function changeValue() {
+  localStorage.setItem("mytime", Date.now());
+}
+</script>
+  </head>
 <body>
 
 <h1>The Storage Event 2</h1>
@@ -15,11 +23,6 @@
 
 <p id="demo"></p>
 
-<script>
 
-function changeValue() {
-  localStorage.setItem("mytime", Date.now());
-}
-</script>
 </body>
 </html>
